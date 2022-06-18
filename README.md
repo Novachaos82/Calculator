@@ -1,9 +1,8 @@
 # Calculator
 
-Project: calculator, TheOdinProject
+Project: Calculator, TheOdinProject
 
-Made with 
-
+Made with:
 * HTML
 * CSS
 * JavaScript

@@ -101,6 +101,7 @@ body {
 }
 
 .buttons button {
+
     font-size: 1.5rem;
     border-radius: 131px;
     /*background: ;*/
@@ -114,6 +115,7 @@ body {
     border: transparent;
     padding: 10px;
     transition: all 0.3s;
+
 }
 
 .buttons button:hover {
@@ -144,6 +146,7 @@ body {
 .number:hover {
     background: #fff;
     color: #ccc;
+
 }
 
 .equals:hover {
