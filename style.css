@@ -124,6 +124,11 @@ body {
   grid-column: 3/5;
 }
 
+.number:hover {
+  background: #fff;
+  color: #ccc;
+}
+
 .equals:hover {
   color: white;
   background: greenyellow;
@@ -138,4 +143,9 @@ body {
 
 .clear {
   background: #f4eee0;
+}
+
+.clear:hover {
+  background: #fdde6c;
+  color: #fff;
 }
