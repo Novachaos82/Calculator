@@ -18,12 +18,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 80px;
   background: #fff;
 }
 .nav h4 {
   text-transform: capitalize;
-  font-size: 2.5rem;
+  font-size: 4rem;
   padding: 20px;
 }
 
@@ -44,22 +44,37 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 450px;
-  height: 700px;
+  width: 400px;
+  min-height: 700px;
 }
 
 .display {
-  height: 150px;
-  box-shadow: 1px 1px 1px 0px inset;
-  padding: 10px;
-  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  align-items: flex-end;
+  min-height: 150px;
+  box-shadow: 1px 1px 1px 1px inset;
+  padding: 20px;
+  margin-top: 10px;
   width: 90%;
   /*height: 100px;*/
 
   /*width: 300px;*/
   /*padding: 10px;*/
   border-radius: 20px;
-  background: #ccc;
+  background: #f8f4ff;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-display {
+  font-size: 1.2rem;
+  opacity: 70%;
+}
+.current-display {
+  font-size: 2rem;
 }
 
 .buttons {
@@ -75,24 +90,41 @@ body {
 }
 
 .buttons button {
+  font-size: 1.5rem;
   border-radius: 131px;
   /*background: ;*/
-  box-shadow: 8px 8px 13px #e3e3e3, -8px -8px 13px #ffffff;
+  box-shadow: 8px 8px 13px #ccc;
   border: transparent;
   padding: 10px;
-  transition: 0.3s ease-in;
+
+  transition: all 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.buttons .operator {
+  background: #e1d5e9;
+}
+.buttons .operator:hover {
+  color: #fff;
+  background: #8d28dc;
 }
 
 .all-clear {
   /*width: 100px;*/
   grid-column: 1/3;
+  background-color: #feb92d;
 }
 
 .equals {
+  background-color: #f9ffe3;
   grid-column: 3/5;
 }
 
-button.equals:hover {
+.equals:hover {
   color: white;
   background: greenyellow;
   transform: translateY(-1px);
@@ -102,4 +134,8 @@ button.equals:hover {
   background-color: orange;
   color: white;
   transform: translateY(-1px);
+}
+
+.clear {
+  background: #f4eee0;
 }
