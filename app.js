@@ -20,7 +20,9 @@ clear.addEventListener("click", () => {
 });
 
 equal.addEventListener("click", () => {
-  calculate(operator);
+  if (prevDisplay.innerText != "" && currDisplay.innerText != "") {
+    calculate(operator);
+  }
 });
 
 /*taking numbers input on current display*/
@@ -88,7 +90,7 @@ function calculate(op) {
     const result =
       parseFloat(prevDisplay.innerText) * parseFloat(currDisplay.innerText);
     currDisplay.innerText = result;
-    prevDisplay.innerText = "";
+    //prevDisplay.innerText = "";
   }
 
   if (op === "+") {
